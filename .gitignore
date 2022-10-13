@@ -3,4 +3,6 @@ fonts/*
 *.cls
 *.bat
 tenure_progress/*
-
+.Rproj.user
+Randall_Pruim_CV.log
+.Rhistory

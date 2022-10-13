@@ -1,0 +1,22 @@
+
+# References
+
+```{r}
+tibble::tribble(
+  ~ person, ~ institution, ~ role, ~ contact,
+  "Nicholas J Horton", 
+      "Amherst College", 
+      "Professor of Statistics and Data Science", 
+      "Email: nhorton@amherst.edu | Phone: 413.542.5655",
+  "Daniel T Kaplan", 
+      "Macalester College, DeWitt Wallace Professor emeritus | US Air Force Academy, Distinguished Visiting Professor", NA,
+      "Email: dtkaplan@macalester.edu | Phone: 651.295.7487",
+  "Michael Stob", 
+      "Calvin University", 
+      "Professor of Mathematics and Statistics, emeritus", 
+      "Email: stob@calvin.edu | Phone: 616-443-5271"
+) |>
+  mutate(institution_role = ifelse(is.na(role) | nchar(role) < 1, institution, paste0(institution, ", ", role))) |>
+  detailed_entries(institution_role, , person, , contact)
+```
+

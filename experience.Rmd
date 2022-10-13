@@ -1,0 +1,21 @@
+
+# Experience
+
+```{r}
+tribble(
+  ~Year, ~Position, ~Institution,
+  "2011 -- ", "Professor", "Calvin University",
+  "2003 -- 2011", "Associate Professor", "Calvin University",
+  "2004 -- 2005", "Visiting Associate Professor", "University of Michigan",
+  "1998 -- 2003", "Assistant Professor", "Calvin University",
+  "1996 -- 1998", "Visitor and Lecturer", "Boston University",
+  "1995 -- 1996", "Special Lecturer", "Providence College",
+  "1995", "Visiting Assistant Professor", "Calvin University"
+) |>
+  arrange(desc(Year)) |>
+  detailed_entries(
+    Position,
+    Year,
+    Institution
+  )
+```

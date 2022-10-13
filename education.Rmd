@@ -1,6 +1,19 @@
 # Education
 
-```{r education}
+```{r, education}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Details, 
+  "BA (Mathematics & German)", "1988", "Calvin University", "Grand Rapids, MI", NA ,
+  "PhD (Mathematics)", "1995", "University of Wisconsin", "Madison, WI", 
+     "Thesis: Weakly hard languages and Kuratowski-Ulam
+theorems for resource-bounded category"
+) |> 
+  arrange(desc(Year)) |>
+  detailed_entries(Degree, Year, Institution, Where, Details)
+```
+
+```{r include = FALSE, eval = FALSE}
 ezpickr::pick("data/education.xlsx") %>%
   tidyr::fill(-why) %>%
   vitae::detailed_entries(what, when, with, where, why)

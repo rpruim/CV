@@ -1,0 +1,36 @@
+
+# R Packages Available on CRAN
+
+```{r, results = "asis"}
+pkgsearch::advanced_search(Author = "Pruim") |>
+  # filter(map_lgl(package_data, ~ grepl("Randall Pruim", .x$Author, fixed = TRUE))) %>% 
+  as_tibble() |> 
+  mutate(
+    year = lubridate::year(date), 
+    role = ifelse(grepl("Pruim", maintainer_name), "author/maintainer", "author")) |>
+  arrange(desc(downloads_last_month)) |>
+  mutate(id = 1:n()) |>
+  mutate(description = gsub("\\&", "\\\\&", description)) |>
+  mutate(description = gsub("\n", " ", description)) |>
+  with(glue::glue(.open = "[", .close = "]", r"(\leavevmode\vadjust pre{\hypertarget{ref-package:[id]}{}}\textbf{[package]} ([version]): \emph{[title]} -- [description]  Role: [role]. Last update: [year].
+                  
+                  
+                  )")) |>
+  # with(glue::glue(.open = "[", .close = "]", r"(\leavevmode\vadjust pre{\hypertarget{ref-package:[id]}{}}
+  #                 \CSLLeftMargin{[id]. }\CSLRightInline{\textbf{[package]} ([version]): \emph{[title]} -- [description]  Role: [role]. Last update: [year].}
+  #                 
+  #                 
+  #                 )")) |>
+  # with(
+  #   glue::glue("\n\n1. **{package}** ({version}): *{title}* -- {description}. Role: {role}. Last update: {year}.\n")
+  # ) |>
+  cat()
+  # brief_entries(
+  #   what = glue::glue("{package} ({version}): {title}"), 
+  #   with = glue::glue("{description}. Role: {role}. Last update: {year}.")
+  # )
+```
+
+
+I also maintain several other packages, mostly for use in courses or for personal use (sometimes shared with colleauges) on GitHub.
+These include **CalvinBayes**, **CalvinData**, **leaflethex**, **daily**, **grading**, and **webwork**.

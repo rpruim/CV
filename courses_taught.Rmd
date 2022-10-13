@@ -1,0 +1,41 @@
+# Courses Taught
+
+<!-- ```{r teaching-experience}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+``` -->
+
+* At Calvin: 
+CS 260 (Automata Theory),
+CS 360 (Complexity and Computability),
+Data 303 (Applied Modeling and Visualization)
+Math 100 (Mathematics in the Contemporary World), 
+Math 132 (Calculus for Management, Life, and Social Sciences), 
+Math 156 (Discrete  Mathematics for Computer Science), 
+Math 171 (Calculus I), 
+Math 172 (Calculus II), 
+Math 221 (The Real Number System and Methods for Elementary School Teachers),
+Math 232 (Engineering Mathematics),
+Math 251 (Discrete Mathematics I), 
+Math 252 (Discrete Mathematics II),
+Math 312 (Logic, Computability, and Complexity),
+Math 361 (Real Analysis),
+Math 362 (Real Analysis II),
+Math 381 (Mathematical Logic),
+Stat 143 (Introduction to Probability and Statistics),
+Stat 145 (Biostatistics),
+Stat 241 (Engineering Statistics),
+Stat 243 (Statistics),
+Stat 341 (Computational Bayesian Statistics),
+Stat 343 (Probability and Statistics),
+Stat 343 (Mathematical Statistics),
+MGMT 535 (Statistical Analysis)
+
+* For The Institute for Statistics Education (statistics.com): Visualization in R with ggplot2
+
+* At University of Michigan: Biostatistics (for graduate students in public health) 
+
+* At Boston University: Accelerated Intro Programming in C 
+
+* At Providence College: Mathematics for the Liberal Arts

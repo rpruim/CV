@@ -1,21 +1,26 @@
 ---
 graphics: yes
-name: JooYoung
-surname: Seo
+name: Randall
+surname: Pruim
 headcolor: 414141
 #qualifications: 
 position: "Ph.D."
-address: "614 E. Daniel St. | Room 5158, Champaign, IL 61820"
-phone: "+1 217-333-2671"
-www: jooyoungseo.github.io
-email: "jseo1005@illinois.edu"
-twitter: seo_jooyoung
-github: jooyoungseo
-linkedin: jooyoungseo
-aboutme: |
-  I am a learning scientist, data-science/software engineer, and internationally certified accessibility professional.
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
-csl: "csl/apa6-cv.csl"
+address: "2134 Omena Dr SE | Grand Rapids, MI 49506"
+phone: "+1 616-307-2731"
+www: rpruim.github.io
+email: "rpruim@gmail.com"
+twitter: rjpruim
+github: rpruim
+linkedin: rpruim
+date: "`r format(Sys.time(), '%B %Y')`"
+profilepic: headshot-brown.jpg
+# date: '`r format(Sys.Date(), "%B %d, %Y")`'
+citation_package: biblatex
+# aboutme: 
+# csl: "csl/apa-annotated-bibliography.csl"
+csl: "csl/rjp-apa6-cv.csl"
+# csl: "csl/ieee-with-url.csl"
+# csl: "csl/chicago-annotated-bibliography.csl"
 nocite: "@*"
 header-includes:
   - \usepackage{fancyhdr}
@@ -23,15 +28,13 @@ header-includes:
   - \fancyhf{}
   - \fancyhead[R]{\thepage}
 knit: bookdown::render_book
-bibliography_selected: "bib/selected.bib"
-bibliography_journals: "bib/journal.bib"
-bibliography_proceedings: "bib/proceedings.bib"
-bibliography_healthcare: "bib/healthcare.bib"
-bibliography_working_paper: "bib/working_paper.bib"
-bibliography_R_packages: "bib/R_packages.bib"
-bibliography_github_projects: "bib/github.bib"
-#given-name-pattern: JooYoung
-#family-name-pattern: Seo
+# bibliography_selected: "bib/selected.bib"
+bibliography_publications: "bib/Pruim-pubs.bib"
+bibliography_materials: "bib/Pruim-materials.bib"
+# bibliography_proceedings: "bib/proceedings.bib"
+# bibliography_working_paper: "bib/working_paper.bib"
+# bibliography_R_packages: "bib/R_packages.bib"
+# bibliography_github_projects: "bib/github.bib"
 ---
 
 ```{r setup, include=FALSE, cache = FALSE}

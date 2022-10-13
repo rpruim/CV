@@ -1,0 +1,23 @@
+
+# Invited and Conference Presentations
+
+```{r, presentations}
+bibliography_entries("bib/Pruim-presentations.bib") |> 
+  arrange(desc(issued)) 
+```
+
+```{r, eval = FALSE, results = "asis"}
+bibliography_entries("bib/Pruim-presentations.bib") |> 
+  # remove items with non-dates (eg, submitted)
+  # filter(! sapply(issued, function(x) length(x[[1]]) < 1)) |>  
+  arrange(desc(issued)) |>
+  mutate(id = 1:n()) |>                         
+  mutate(
+    location = ifelse(is.na(`publisher-place`), "", paste0(' (', `publisher-place`, ')')),
+    URL = ifelse(is.na(URL), "", URL)
+    ) |>
+  with(glue::glue(.open = "[", .close = "]", r"(\leavevmode\vadjust pre{\hypertarget{ref-workshop:[id]}{}}
+                  \CSLLeftMargin{[id]. }\CSLRightInline{[title][location]. [note] \url{[URL]}.}
+                  
+                  )"))
+```
