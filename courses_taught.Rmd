@@ -7,29 +7,30 @@ ezpickr::pick("data/teaching-experience.xlsx") %>%
 ``` -->
 
 * At Calvin: 
-CS 260 (Automata Theory),
-CS 360 (Complexity and Computability),
-Data 303 (Applied Modeling and Visualization)
-Math 100 (Mathematics in the Contemporary World), 
-Math 132 (Calculus for Management, Life, and Social Sciences), 
-Math 156 (Discrete  Mathematics for Computer Science), 
-Math 171 (Calculus I), 
-Math 172 (Calculus II), 
-Math 221 (The Real Number System and Methods for Elementary School Teachers),
-Math 232 (Engineering Mathematics),
-Math 251 (Discrete Mathematics I), 
-Math 252 (Discrete Mathematics II),
-Math 312 (Logic, Computability, and Complexity),
-Math 361 (Real Analysis),
-Math 362 (Real Analysis II),
-Math 381 (Mathematical Logic),
-Stat 143 (Introduction to Probability and Statistics),
-Stat 145 (Biostatistics),
-Stat 241 (Engineering Statistics),
-Stat 243 (Statistics),
-Stat 341 (Computational Bayesian Statistics),
-Stat 343 (Probability and Statistics),
-Stat 343 (Mathematical Statistics),
+CS 260 (Automata Theory) $\bullet$
+CS 360 (Complexity and Computability) $\bullet$
+Data 303 ([Applied Modeling and Visualization](https://rpruim.github.io/ds303/S22/)) $\bullet$
+Math 100 (Mathematics in the Contemporary World) $\bullet$ 
+Math 132 (Calculus for Management, Life, and Social Sciences) $\bullet$ 
+Math 156 (Discrete  Mathematics for Computer Science) $\bullet$ 
+Math 171 (Calculus I) $\bullet$ 
+Math 172 (Calculus II) $\bullet$ 
+Math 221 (The Real Number System and Methods for Elementary School Teachers) $\bullet$
+Math 232 (Engineering Mathematics) $\bullet$
+Math 251 (Discrete Mathematics I) $\bullet$ 
+Math 252 ([Discrete Mathematics II](https://rpruim.github.io/m252/S22/)) $\bullet$
+Math 312 (Logic, Computability, and Complexity) $\bullet$
+Math 361 (Real Analysis) $\bullet$
+Math 362 (Real Analysis II) $\bullet$
+Math 381 (Mathematical Logic) $\bullet$
+Stat 143 (Introduction to Probability and Statistics) $\bullet$
+Stat 145 ([Biostatistics](https://rpruim.github.io/s145/F20/)) $\bullet$
+Stat 241 ([Engineering Statistics](https://rpruim.github.io/s241/W21/)) $\bullet$
+Stat 243 (Statistics) $\bullet$
+Stat 341 ([Computational Bayesian Statistics](https://rpruim.github.io/s341/S21/)) $\bullet$
+Stat 343 ([Probability and Statistics](https://rpruim.github.io/s343/F21/)) $\bullet$
+Stat 343 (Mathematical Statistics) $\bullet$
+Stat W82 ([Visualize This! with D3](https://rpruim.github.io/D3/)) $\bullet$
 MGMT 535 (Statistical Analysis)
 
 * For The Institute for Statistics Education (statistics.com): Visualization in R with ggplot2

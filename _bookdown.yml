@@ -13,7 +13,7 @@ rmd_files:
   - "cran-packages.Rmd"
   - "materials.Rmd"
   - "courses_taught.Rmd"
-  - "newpage.Rmd"
+#  - "newpage.Rmd"
 #  - "appointment.Rmd"
 # - "certificate.Rmd"
 # - "healthcare.Rmd"
@@ -22,7 +22,7 @@ rmd_files:
 # - "award.Rmd"
 # - "service.Rmd"
 #  - "membership.Rmd"
-  - "references.Rmd"
+#  - "references.Rmd"
 # - "backmatter.Rmd"
 book_filename: "Randall_Pruim_CV"
 delete_merged_file: true
