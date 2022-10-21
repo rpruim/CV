@@ -1,5 +1,5 @@
 
-# R Packages Available on CRAN
+# Packages Available on CRAN
 
 ```{r, results = "asis"}
 pkgsearch::advanced_search(Author = "Pruim") |>
@@ -33,4 +33,4 @@ pkgsearch::advanced_search(Author = "Pruim") |>
 
 
 I also maintain several other packages, mostly for use in courses or for personal use (sometimes shared with colleauges) on GitHub.
-These include **CalvinBayes**, **CalvinData**, **leaflethex**, **daily**, **grading**, and **webwork**.
+These include **CalvinBayes**, **CalvinData**, **leaflethex** (largely implemented by a student I supervised), **daily**, **grading**, and **webwork**.

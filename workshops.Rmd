@@ -1,9 +1,12 @@
 
+\pagebreak[1]
+
 # Workshops
 
 ```{r workshops}
 bibliography_entries("bib/Pruim-workshops.bib") |>
-  arrange(desc(issued)) 
+  arrange(desc(issued)) |>
+  mutate(note = paste0(`publisher-place`, ". ", note), `publisher-place` = NA)
 ```
 
 ```{r, eval = FALSE, results = "asis"}
@@ -13,11 +16,14 @@ bibliography_entries("bib/Pruim-workshops.bib") |>
   arrange(desc(issued)) |>
   mutate(id = 1:n()) |>                         
   mutate(
+    note = ifelse(is.na(note), "", note),
     location = ifelse(is.na(`publisher-place`), "", paste0(' (', `publisher-place`, ')')),
-    URL = ifelse(is.na(URL), "", URL)
+    URL = ifelse(is.na(URL), "", glue::glue(.open = "[", .close = "]", "\\url{[URL]}"))
     ) |>
   with(glue::glue(.open = "[", .close = "]", r"(\leavevmode\vadjust pre{\hypertarget{ref-workshop:[id]}{}}
-                  \CSLLeftMargin{[id]. }\CSLRightInline{[title][location]. [note] \url{[URL]}.}
-                  
-                  )"))
+                  \emph{[title]}[location]. [note] [URL]
+
+)"))
 ```
+
+

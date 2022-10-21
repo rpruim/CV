@@ -1,0 +1,12 @@
+# Languages
+
+\begin{cvskills}
+  \cvskill
+    {English}
+    {native speaker}
+
+  \cvskill
+    {German}
+    {near native fluency; transalted two theoretical computer science books from German into English}
+
+\end{cvskills}

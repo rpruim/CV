@@ -1,0 +1,50 @@
+
+\pagebreak[1]
+
+# Selected Service Roles
+
+```{r, selected-service}
+library(tibble)
+tribble(
+  ~ role, ~org, ~ year,  ~ details, 
+  "Chair, Department of Mathematics and Statistics",
+  "Calvin University",
+  "2014--",
+  "I also serve as co-Director of Calvin's data science programs.",
+  
+  "Stearing Committee and Conference Programming Committee co-Chair",
+  "Big Data Ignite",
+  "2017--",
+  "Big Data Ignite is local non-profit that hosts events regionally for practitioners of 
+  data science (big data, IoT, and cloud computing) in industry and education. 
+  The main event is an annual 3-day in-person meeting.
+  Due to the pandemic, we have offered virutal events instead
+  the last couple of years.
+  We hope to resume an in-person multi-day event in 2023.", 
+  
+  "Member, Joint Committee for Statistics Education",
+  "American Statistical Association and Mathematical Association of America",
+  "2016--18",
+  NA,
+  
+  "Vice Chair, Chair, and Past-Chair",  
+  "SIGMAA (Special Interest Group of the MAA) for Statistics Education",
+  "2012--15",
+  "Proposed and organized sessions at annual MAA Meetings (Joint Mathematics Meetings and SummerFest);
+  member of awards committee for SIGMAA StatEd awards.",
+  
+  "Michigan Section Executive Committee",
+  "Michigan Section of the MAA",
+  "2006--09",
+  "Served as Vice Chair, Chair, Past Chair, and Program Committee Chair for the annual meeting",
+  
+  "Michigan Undergraduate Mathematics Conference organizing committee",
+  "Michigan Section of the MAA",
+  "2002--03",
+  "Served as chair of both the conference committee and the program committee in 2002."
+  
+) |> 
+  arrange(desc(year)) |>
+  detailed_entries(with = org, when = year, what = role, why = details)
+```
+

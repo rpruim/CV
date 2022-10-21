@@ -16,7 +16,7 @@ tibble::tribble(
       "Professor of Mathematics and Statistics, emeritus", 
       "Email: stob@calvin.edu | Phone: 616-443-5271"
 ) |>
-  mutate(institution_role = ifelse(is.na(role) | nchar(role) < 1, institution, paste0(institution, ", ", role))) |>
-  detailed_entries(institution_role, , person, , contact)
+  mutate(institution_role = ifelse(is.na(role) | nchar(role) < 1, institution, paste0(institution, ", ", role))) |> 
+  detailed_entries(what = institution_role, with = person, why = contact, where = NA, when = NA) 
 ```
 

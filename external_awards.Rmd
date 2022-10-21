@@ -5,25 +5,25 @@
 tibble::tribble(
   ~what, ~role, ~ description, ~date, ~amount,
   "NSF S-STEM: Expanding Computation for Interdisciplinary Science",
-  "PI with co-PIs Joel Adams, David Benson, Serita Nelesen, Randall DeJong",
+  "PI with co-PIs J. Adams, D. Benson, S. Nelesen, R. DeJong",
   "This grant funded scholarships of up to $8000 annually and other support for Calvin students studying science and computation.", "2012--2016", "$600 K",
   
   "NSF TUES: Leveraging Laboratory Activities to Achieve Educational Reform",
-  "co-PI with David Koetje (PI), Amy Wilstermann, Herbert Fynewever, and Randall Van Dragt",
+  "co-PI with D. Koetje (PI), A. Wilstermann, H. Fynewever, and R. Van Dragt",
   "This grant supported work to produce new laboratory materials for the introductory biology sequence.", "2012--15", "$200 K",
   
   "NSF ARI-R2: Integrated Science Research Experimental Laboratory",
-  "co-PI with David Benson (PI), David DeHeer, Matthew Walhout, and Chad Tatko",
+  "co-PI with D. Benson (PI), D. DeHeer, M. Walhout, and C. Tatko",
   "This NSF grant funded the remodeling of the laboratory space on the ground level of the Science Building.",
   "2010--11", "$951 K",
   
   "NSF CCLI, Phase II: Building a Community around Modeling, Statistics, Computation, and Calculus",
-  "co-PI with Daniel Kaplan (PI), Nicholas Horton, and Eric Marland",
+  "co-PI with D. Kaplan (PI), N. Horton, and E. Marland",
   "This grant funded an initiative called Project MOSAIC. http://mosaic-web.org/",
   "2009--12", "$275 K",
   
   "NSF S-STEM: Computation for Interdisciplinary Science", 
-  "PI with co-PIs Joel Adams, David DeHeer, David Koetje, and Kieth Vander Linden",
+  "PI with co-PIs J. Adams, D. DeHeer, D. Koetje, and K. Vander Linden",
   "This grant funded scholarships of up to $8000 annually to Calvin students studying science and computation.", "2009--13", "$581 K$",
   
   "Howard Hughes Medical Institute grant",

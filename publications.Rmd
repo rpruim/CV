@@ -1,3 +1,5 @@
+\pagebreak[1]
+
 # Publications
 
 <!-- * The following notations only apply to September 2021 and after. -->
