@@ -3,12 +3,13 @@ graphics: yes
 name: Randall
 surname: Pruim
 headcolor: 414141
-#qualifications: 
+# qualifications: 
 position: "Ph.D."
-address: "2134 Omena Dr SE | Grand Rapids, MI 49506"
+# address: "2134 Omena Dr SE | Grand Rapids, MI 49506"
 phone: "+1 616-307-2731"
 www: rpruim.github.io
-email: "rpruim@gmail.com"
+# email: "rpruim@gmail.com"
+email: "rpruim@calvin.edu"
 # twitter: rjpruim
 github: rpruim
 linkedin: rpruim
